@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+"""`nemo-speech` (ROCm) launcher -- drop-in for the documented Nemotron runtime."""
+import os
+import sys
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, REPO)
+
+from nemo_speech_rocm import main  # noqa: E402
+
+if __name__ == "__main__":
+    raise SystemExit(main())

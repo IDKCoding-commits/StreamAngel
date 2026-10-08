@@ -1,0 +1,15 @@
+# Models are hundreds of megabytes and are fetched on first use (`pull`).
+models/*.gguf
+models/*.part
+models/.cache/
+
+# Caches and build artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+
+# Local virtualenvs
+streamvenv/
+.venv/
+venv/

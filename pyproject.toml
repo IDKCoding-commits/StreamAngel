@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamangel-asr"
+version = "0.2.0"
+description = "Drop-in for NVIDIA's documented Nemotron/Parakeet Speech runtime, on any GPU backend"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+streamangel-asr = "nemo_speech_rocm:main"
+
+[tool.setuptools]
+py-modules = ["nemo_speech_rocm", "parakeet_transformers"]

@@ -1,0 +1,7 @@
+# StreamAngel runtime dependencies.
+# The ASR layer (nemo_speech_rocm.py) is Python-stdlib only and needs none of these.
+pydub
+
+# Not installable from PyPI -- install the ffmpeg binary via your package manager
+# (apt/dnf/brew/winget). Only needed for non-WAV input.
+# ffmpeg
